@@ -2,6 +2,6 @@ name: Hello World
 on: [push]
 jobs:
   Hello-World-Job:
-    runs-on: codebuild-self-hoster-runner-test-${{ github.run_id }}-${{ github.run_attempt }}
+    runs-on: codebuild-test-self-hosted-runner-${{ github.run_id }}-${{ github.run_attempt }}
     steps:
       - run: echo "Hello World!"
